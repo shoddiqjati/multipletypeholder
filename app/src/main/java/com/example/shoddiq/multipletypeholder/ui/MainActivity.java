@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         LinearLayoutManager manager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(manager);
+        recyclerView.setNestedScrollingEnabled(false);
     }
 
     @Override
